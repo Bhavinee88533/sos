@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+
+div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button{
+    background-color: red;
+    color: aliceblue;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+button:active{
+  width: 190px;
+  height: 90px;
+}
