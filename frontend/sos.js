@@ -7,7 +7,7 @@ document.getElementById('sosButton').addEventListener('click', function() {
             const longitude = position.coords.longitude;
 
             const sosData = {
-                email: ['pushpa902690@gmail.com'],  //'khushiisingh2507@gmail.com','harshitarajsingh1@gmail.com','ikshasinha6@gmail.com','mittalvidhi2004@gmail.com'
+                email: ['bhavineesingh88533@gmail.com'],
                 subject: 'HELP Alert! Immediate Assistance Required',
                 message: `Hello,
                     username:${username}
@@ -16,7 +16,7 @@ document.getElementById('sosButton').addEventListener('click', function() {
                     I need someone to come to my location as soon as possible. Here is my location: https://www.google.com/maps?q=${latitude},${longitude}`
             };
 
-            fetch('https://sos-z3ermzfah-bhavinee-singhs-projects.vercel.app/send-sos-email', {
+            fetch('http://localhost:3000/send-sos-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
