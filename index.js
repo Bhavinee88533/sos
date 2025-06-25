@@ -12,6 +12,16 @@ app.use(cors({
   
 const port = 3000;
 
+const path = require('path');
+
+// Serve static frontend
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve index.html on root
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
