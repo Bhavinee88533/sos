@@ -4,13 +4,6 @@ const cors = require('cors');
 
 
 const app = express();
-app.use(cors({
-  origin: 'https://sos-jknr.onrender.com',
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type'],
-  credentials: true
-}));
-  
 const port = 3000;
 
 const path = require('path');
@@ -23,6 +16,13 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+app.use(cors({
+  origin: 'https://sos-jknr.onrender.com',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+  credentials: true
+}));
+  
 // Start the server
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
