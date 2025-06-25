@@ -7,7 +7,7 @@ document.getElementById('sosButton').addEventListener('click', function() {
             const longitude = position.coords.longitude;
 
             const sosData = {
-                email: ['bhavineesingh88533@gmail.com'],
+                email: 'bhavineesingh88533@gmail.com',
                 subject: 'HELP Alert! Immediate Assistance Required',
                 message: `Hello,
                     username:${username}
