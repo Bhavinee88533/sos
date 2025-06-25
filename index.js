@@ -6,10 +6,10 @@ const cors = require('cors');
 const app = express();
 app.use(cors({
   origin: 'https://sos-jknr.onrender.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+  credentials: true
 }));
-
   
 const port = 3000;
 
