@@ -16,7 +16,7 @@ document.getElementById('sosButton').addEventListener('click', function() {
                     I need someone to come to my location as soon as possible. Here is my location: https://www.google.com/maps?q=${latitude},${longitude}`
             };
 
-            fetch('http://localhost:3000/send-sos-email', {
+            fetch('http://localhost:5000/api/sos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

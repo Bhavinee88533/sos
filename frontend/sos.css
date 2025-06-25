@@ -11,11 +11,11 @@ button{
     background-color: red;
     color: aliceblue;
     width: 200px;
-    height: 100px;
+    height: 200px;
     font-size: 30px;
-    border-radius: 15px;
+    border-radius: 100px;
     position: absolute;
-    top: 40vh;
+    top: 35vh;
 }
 button:active{
   width: 190px;
