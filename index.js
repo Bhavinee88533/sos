@@ -12,7 +12,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve index.html on root
-app.get('/', (req, res) => {
+app.get('/send-sos-email', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
