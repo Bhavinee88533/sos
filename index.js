@@ -18,7 +18,7 @@ app.get('/send-sos-email', (req, res) => {
 
 
 app.use(cors({
-  origin: 'https://sos-jknr.onrender.com',
+  origin: 'https://sos-jknr.onrender.com/send-sos-email',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
